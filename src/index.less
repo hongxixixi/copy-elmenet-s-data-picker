@@ -1,0 +1,166 @@
+ #group-date-picker {
+     width: 100%;
+     height: 100%;
+     float: left;
+ }
+
+ .g-date-picker {
+     position: relative;
+     display: inline-block;
+ }
+
+ .calender-date-picker {
+     width: 100%;
+     height: 100%;
+
+     .mid {
+         width: 100%;
+         height: 100%;
+         position: relative;
+
+         .picker-box {
+             width: 100%;
+             height: 300px;
+             position: relative;
+             background: #fff;
+             box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+             color: #606266;
+
+             .date-range {
+                 width: 14%;
+                 z-index: 9999;
+                 position: absolute;
+                 left: -13.8%;
+                 height: 100%;
+                 display: inline-block;
+                 border: 1px solid #e4e4e4;
+                 box-sizing: border-box;
+                 background: #fff;
+                 flex: 1;
+                 align-items: center;
+
+                 .date-range-item {
+                     padding: 6% 0;
+                     cursor: pointer;
+                     font-size: 0.8rem;
+                 }
+             }
+
+             .main {
+                 width: 50%;
+                 height: 100%;
+                 float: left;
+                 font-weight: 500;
+                 position: absolute;
+                 z-index: 9999;
+                 left: 0px;
+                 background: #fff;
+                 border: 1px solid #e4e4e4;
+                 box-sizing: border-box;
+
+                 .choose_year {
+                     display: flex;
+                     position: relative;
+                     border-bottom: 1px solid #e8e8e8;
+                     padding: 2% 0;
+                     height: 10%;
+                     box-sizing: border-box;
+
+                     .icon {
+                         width: 10%;
+                         height: 16px;
+                         line-height: 16px;
+                         text-align: center;
+                     }
+
+                     .date {
+                         width: 79%;
+                         text-align: center;
+                         height: 16px;
+                         line-height: 16px;
+                         font-size: 0.9rem;
+                     }
+                 }
+
+                 .days_area {
+                     display: flex;
+                     flex-wrap: wrap;
+                     height: 90%;
+                     box-sizing: border-box;
+
+                     .in-rang {
+                         background-color: #dfefff;
+                     }
+
+                     .choose_day {
+                         background-color: dodgerblue !important;
+                         color: #fff;
+                     }
+
+                     .week {
+                         margin: 0;
+                     }
+
+                     .day.disabled {
+                         cursor: not-allowed;
+                         color: #c0c4cc;
+                     }
+
+                     .day {
+                         width: 14.28%;
+                         text-align: center;
+                         cursor: pointer;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         flex-direction: column;
+
+                         p {
+                             margin: 0;
+                             font-size: 0.9vw;
+                         }
+
+                         span {
+                             font-size: 0.6vw;
+                             padding: 3%;
+                         }
+                     }
+
+                 }
+             }
+         }
+     }
+
+     span {
+         left: 40%;
+     }
+
+     .picker-date-input {
+         padding-left: 0;
+         width: 100%;
+         height: 100%;
+         position: relative;
+         box-sizing: border-box;
+         overflow: hidden;
+
+         span {
+             position: absolute;
+             width: 8%;
+         }
+
+         .el-input {
+             width: 40%;
+             height: 100%;
+             position: relative;
+             font-size: 0.9rem;
+             display: inline-block;
+             box-sizing: border-box;
+
+             //  border-bottom: 1px solid #7474747c;
+             .el-input__inner {
+                 text-align: center;
+                 height: 100%;
+             }
+         }
+     }
+ }
